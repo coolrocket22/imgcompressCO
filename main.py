@@ -60,7 +60,7 @@ def main():
         
         if name_opt == "Preset":
             col1, col2 = st.columns(2)
-            with col1: pre = st.text_input("Name", "FUNG_HeiLongAdriel")
+            with col1: pre = st.text_input("Name (HKCR format)", "FUNG_HeiLongAdriel")
             with col2: suf = st.text_input("Class code", "MS")
             fname = f"{pre}_BasicCO25_{suf}"
         else:
