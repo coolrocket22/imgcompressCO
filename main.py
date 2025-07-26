@@ -60,9 +60,9 @@ def main():
         
         if name_opt == "Preset":
             col1, col2 = st.columns(2)
-            with col1: pre = st.text_input("Name", "FUNG_HeiLongAdriel_BasicCO25")
+            with col1: pre = st.text_input("Name", "FUNG_HeiLongAdriel")
             with col2: suf = st.text_input("Class code", "MS")
-            fname = f"{pre}_{suf}.jpg"
+            fname = f"{pre}_BasicCO25_{suf}.jpg"
         else:
             fname = st.text_input("Filename", f"{base}_compressed.jpg")
         
