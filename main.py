@@ -62,11 +62,9 @@ def main():
             col1, col2 = st.columns(2)
             with col1: pre = st.text_input("Name", "FUNG_HeiLongAdriel")
             with col2: suf = st.text_input("Class code", "MS")
-            fname = f"{pre}_BasicCO25_{suf}.jpg"
+            fname = f"{pre}_BasicCO25_{suf}"
         else:
-            fname = st.text_input("Filename", f"{base}_compressed.jpg")
-        
-        if not fname.lower().endswith('.jpg'): fname += ".jpg"
+            fname = st.text_input("Filename", f"{base}_compressed")
         
         # Download button
         st.download_button(
